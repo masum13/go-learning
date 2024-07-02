@@ -3,8 +3,9 @@
 ## Sections
 
 ### Variable
-1. Scope
-2. TypeConversions
+1. Print
+2. Scope
+3. TypeConversions
 ### Primitiives
 ### Constants
 ### Array and Slices

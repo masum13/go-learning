@@ -1,17 +1,8 @@
-# Type Conversion in GoLang
-
-In GoLang, type conversion (also known as type casting) is the process of converting a variable from one type to another. This is useful when you need to change the type of a variable to perform certain operations or assignments.
-
-## Basic Syntax
-
-Type conversion in GoLang is done using syntax like `Type(value)` where `Type` is the target type to which you want to convert the `value`.
-
-Example:
-```go
 package main
 
 import (
-    "fmt"
+	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -41,11 +32,5 @@ func main() {
 	// We can also do the reverse with strconv.Atoi function. But use with caution .
 	numStrNew, _ := strconv.Atoi(strNum)
 	fmt.Printf("Type: strNum %T numStrNew %T \n", strNum, numStrNew)
+
 }
-```
-
-### Note:
-
-- Type conversion works only between compatible types, such as converting numeric types to each other or converting string to byte slice and vice versa.
-- Converting between incompatible types may result in runtime errors or unexpected behavior.
-- Type conversion does not change the underlying value; it only changes how the value is interpreted.
